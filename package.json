@@ -2,10 +2,6 @@
   "name": "ts-lib-template",
   "version": "0.1.0",
   "description": "TypeScript-based library template.",
-  "main": "index.js",
-  "scripts": {
-    "test": "vitest"
-  },
   "keywords": [
     "typescript",
     "template"
@@ -20,8 +16,23 @@
     "url": "https://github.com/mdjastrzebski/ts-lib-template/issues"
   },
   "homepage": "https://github.com/mdjastrzebski/ts-lib-template#readme",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "bin": {
+    "bin": "./bin.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest",
+    "lint": "echo \"TODO: setup lint\""
+  },
   "devDependencies": {
     "@types/node": "^22.13.8",
-    "typescript": "^5.8.2"
-  }
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  },
+  "packageManager": "pnpm@10.5.2"
 }
