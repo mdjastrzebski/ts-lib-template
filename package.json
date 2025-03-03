@@ -1,0 +1,27 @@
+{
+  "name": "ts-lib-template",
+  "version": "0.1.0",
+  "description": "TypeScript-based library template.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "keywords": [
+    "typescript",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdjastrzebski/ts-lib-template.git"
+  },
+  "author": "Maciej Jastrzębski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mdjastrzebski/ts-lib-template/issues"
+  },
+  "homepage": "https://github.com/mdjastrzebski/ts-lib-template#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.8",
+    "typescript": "^5.8.2"
+  }
+}
