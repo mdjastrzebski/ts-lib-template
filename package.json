@@ -2,6 +2,7 @@
   "name": "ts-lib-template",
   "version": "0.1.0",
   "description": "TypeScript-based library template.",
+  "type": "module",
   "keywords": [
     "typescript",
     "template"
@@ -16,7 +17,12 @@
     "url": "https://github.com/mdjastrzebski/ts-lib-template/issues"
   },
   "homepage": "https://github.com/mdjastrzebski/ts-lib-template#readme",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
   "files": [
     "dist"
   ],
@@ -24,14 +30,21 @@
     "bin": "./bin.js"
   },
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "typecheck": "tsc --noEmit",
+    "lint": "eslint",
     "test": "vitest",
-    "lint": "echo \"TODO: setup lint\""
+    "validate": "pnpm typecheck && pnpm lint && pnp test"
   },
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
     "@types/node": "^22.13.8",
+    "eslint": "^9.21.0",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "globals": "^16.0.0",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
     "vitest": "^3.0.7"
   },
   "packageManager": "pnpm@10.5.2"

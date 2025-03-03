@@ -1,5 +1,9 @@
 #!/usr/bin/env node
 
-import { run } from "./dist/bin.js";
+import { getRandomName, hello } from "./dist/index.js";
 
-run();
+function main() {
+  console.log(hello(getRandomName()));
+}
+
+main();

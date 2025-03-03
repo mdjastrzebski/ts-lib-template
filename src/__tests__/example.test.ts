@@ -1,5 +1,7 @@
-import { test, expect } from "vitest";
+import { expect, test } from "vitest";
 
-test("example", () => {
-  expect(2 + 2).toBe(4);
+import { hello } from "../example.js";
+
+test("hello", () => {
+  expect(hello("World")).toBe("Hello World!");
 });
