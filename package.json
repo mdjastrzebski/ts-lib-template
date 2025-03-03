@@ -1,6 +1,6 @@
 {
   "name": "@mdjdev/ts-lib-template",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "TypeScript-based library template.",
   "type": "module",
   "keywords": [
@@ -50,5 +50,8 @@
     "typescript-eslint": "^8.26.0",
     "vitest": "^3.0.7"
   },
-  "packageManager": "pnpm@10.5.2"
+  "packageManager": "pnpm@10.5.2",
+  "publishConfig": {
+    "access": "public"
+  }
 }
