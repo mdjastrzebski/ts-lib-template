@@ -1,5 +1,5 @@
 {
-  "name": "ts-lib-template",
+  "name": "@mdjdev/ts-lib-template",
   "version": "0.1.0",
   "description": "TypeScript-based library template.",
   "type": "module",
@@ -34,14 +34,17 @@
     "typecheck": "tsc --noEmit",
     "lint": "eslint",
     "test": "vitest",
-    "validate": "pnpm typecheck && pnpm lint && pnp test"
+    "validate": "pnpm typecheck && pnpm lint && pnpm test --no-watch",
+    "release": "release-it"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
+    "@release-it/conventional-changelog": "^10.0.0",
     "@types/node": "^22.13.8",
     "eslint": "^9.21.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.0.0",
+    "release-it": "^18.1.2",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
     "typescript-eslint": "^8.26.0",
