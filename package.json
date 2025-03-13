@@ -38,22 +38,22 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@eslint/js": "^9.21.0",
+    "@eslint/js": "^9.22.0",
     "@release-it/conventional-changelog": "^10.0.0",
-    "@types/node": "^22.13.8",
-    "eslint": "^9.21.0",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.22.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "globals": "^16.0.0",
     "release-it": "^18.1.2",
     "tsup": "^8.4.0",
     "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.0",
-    "vitest": "^3.0.7"
+    "typescript-eslint": "^8.26.1",
+    "vitest": "^3.0.8"
   },
   "engines": {
     "node": ">=20.0.0"
   },
-  "packageManager": "pnpm@10.5.2",
+  "packageManager": "pnpm@10.6.2+sha512.47870716bea1572b53df34ad8647b42962bc790ce2bf4562ba0f643237d7302a3d6a8ecef9e4bdfc01d23af1969aa90485d4cebb0b9638fa5ef1daef656f6c1b",
   "publishConfig": {
     "access": "public"
   }
