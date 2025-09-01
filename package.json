@@ -38,17 +38,17 @@
     "release": "release-it"
   },
   "devDependencies": {
-    "@eslint/js": "^9.22.0",
-    "@release-it/conventional-changelog": "^10.0.0",
-    "@types/node": "^22.13.10",
-    "eslint": "^9.22.0",
+    "@eslint/js": "^9.34.0",
+    "@release-it/conventional-changelog": "^10.0.1",
+    "@types/node": "^24.3.0",
+    "eslint": "^9.34.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
-    "globals": "^16.0.0",
-    "release-it": "^18.1.2",
-    "tsup": "^8.4.0",
-    "typescript": "^5.8.2",
-    "typescript-eslint": "^8.26.1",
-    "vitest": "^3.0.8"
+    "globals": "^16.3.0",
+    "release-it": "^19.0.4",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.41.0",
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">=20.0.0"
