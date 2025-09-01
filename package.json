@@ -33,13 +33,14 @@
     "build": "tsup",
     "typecheck": "tsc --noEmit",
     "lint": "eslint",
-    "test": "vitest",
+    "test": "bun test",
     "validate": "bun typecheck && bun lint && bun test --no-watch",
     "release": "release-it"
   },
   "devDependencies": {
     "@eslint/js": "^9.34.0",
     "@release-it/conventional-changelog": "^10.0.1",
+    "@types/bun": "^1.2.21",
     "@types/node": "^24.3.0",
     "eslint": "^9.34.0",
     "eslint-plugin-simple-import-sort": "^12.1.1",
@@ -47,8 +48,7 @@
     "release-it": "^19.0.4",
     "tsup": "^8.5.0",
     "typescript": "^5.9.2",
-    "typescript-eslint": "^8.41.0",
-    "@types/bun": "latest"
+    "typescript-eslint": "^8.41.0"
   },
   "engines": {
     "node": ">=20.0.0"
