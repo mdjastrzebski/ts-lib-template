@@ -17,20 +17,22 @@ jobs:
         with:
           node-version-file: '.nvmrc'
 
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v4
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: Install dependencies
-        run: pnpm install
+        run: bun install
 
       - name: Build
-        run: pnpm build
+        run: bun run build
 
       - name: Typecheck
-        run: pnpm typecheck
+        run: bun typecheck
 
       - name: Lint
-        run: pnpm lint
+        run: bun lint
 
       - name: Test
-        run: pnpm test
+        run: bun test

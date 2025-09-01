@@ -12,14 +12,14 @@ Only the finest tools in the TypeScript ecosystem:
 
 - 📦 TypeScript 5 & Node.js 20+
 - 🛠️ tsup: ESM & CommonJS bundling
-- 🧪 Vitest for testing, ESLint 9 for linting
+- 🧪 Bun for testing, ESLint 9 for linting
 - 🚀 Release-it for versioning, conventional commits
 - ⚡ GitHub Actions
 
 ## Quick Start
 
 1. Clone this repo
-2. `pnpm install` (or npm/yarn)
+2. `bun install` (or npm/yarn/pnpm)
 3. Start building!
 
 ## Contributing

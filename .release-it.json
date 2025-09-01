@@ -1,7 +1,7 @@
 {
   "hooks": {
-    "before:init": ["pnpm typecheck", "pnpm lint", "pnpm test --no-watch"],
-    "after:bump": "pnpm build",
+    "before:init": ["bun typecheck", "bun lint", "bun test"],
+    "after:bump": "bun build",
     "after:release": "echo Successfully released ${name} v${version} to ${repo.repository}."
   },
   "git": {
